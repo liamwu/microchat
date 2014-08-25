@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Micro Chat :)</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/qtalk.css" />
+	</head>
+	<body>
+		<div id="qtalk" class='shadow'>
+			<div id="appbar">
+				<div id='conn' title="Connect"></div>
+				<div id='disconn' title="Disconnect"><img src="img/close.gif"></div>
+			</div>
+			<div id="tb" style="display:none">
+				<div id="notes"></div>
+				<div id="message">
+					<div class='emoji'>
+						<span>:)</span>
+						<span>^_^</span>
+						<span>XD</span>
+						<span>-_-!</span>
+						<span>@_@</span>
+						<span>orz</span>
+						<span>T_T</span>
+						<span>(*_*)</span>
+					</div>
+					<textarea id="note" name="msg" placeholder="enter your message"></textarea>
+				</div>
+				<div class='footer'><img src="img/emoji.png"></div>
+			</div>
+			<p style="display:none" id="status"></p>
+			<script src="/socket.io/socket.io.js"></script>
+			<script src="js/qtalk.js"></script>
+		</div>
+	</body>
+</html>
